@@ -1,0 +1,73 @@
+
+
+
+1)
+package Student;
+
+import java.util.Scanner;
+
+2)public class Bitwise1 {
+
+	public static void main(String[] args) {
+		int a,b,c;
+		System.out.println("Enter a,b,c values:");
+		Scanner sc= new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		System.out.println(a&b&c);
+		System.out.println(a|b|c);
+		System.out.println(a^b^c);
+		System.out.println(a<<b>>c);
+		
+}
+
+	}
+
+
+
+
+
+
+2)package Student;
+
+public class Unary {
+
+	public static void main(String[] args) {
+		int x,y,z,m;
+		x=2;
+		y=++x;
+		z=x++ + ++y;
+		m=x++ + ++x +y++ -z--;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		System.out.println(m);
+	}
+
+}
+   
+
+
+
+
+3)
+package second;
+
+public class Alloperators {
+
+	public static void main(String[] args) {
+		int a=10,b,c,d;
+		a+=3;
+		a++;
+		b=a++;
+		c=a+b;
+		System.out.println(a>b);
+		System.out.println((a<b)&&(b>c));
+		System.out.println(a|b|c);
+		d=(a>b)?5:10;
+		System.out.println(d);
+		
+	}
+
+}
