@@ -1,0 +1,152 @@
+//SELECTIVE CONTROLS
+
+
+package second;
+
+import java.util.Scanner;
+
+public class Ifelse {
+
+	public static void main(String[] args) {
+		int n;
+		System.out.println("Enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		if(n<=10)
+		{
+			System.out.println("True");
+			
+		}
+		else
+		{
+			System.out.println("False");
+		}
+
+	}
+
+}
+
+
+
+
+package second;
+
+public class Ifelseif {
+
+	public static void main(String[] args) {
+		int n=10;
+		if(n<=10)
+		{
+			System.out.println("It is true");
+		}
+		else if(n<1)
+		{
+			System.out.println("It is false");
+		}
+		else if(n==1)
+		{
+			System.out.println("No idea");
+		}
+		else
+			{
+			System.out.println("None");
+			}
+			
+		
+	}
+
+}
+
+
+
+
+package second;
+
+public class Nestedif {
+
+	public static void main(String[] args) {
+		int n=10;
+		if(n<=10)
+		{
+			System.out.println("True");
+				if(n==1)
+				{
+					System.out.println("False");
+				}
+				else
+				{
+					System.out.println("Yessss");
+				}
+		}
+		else
+		{
+			System.out.println("None");
+			
+		}
+	}
+
+}
+
+
+
+package second;
+
+import java.util.Scanner;
+
+public class Switch {
+
+	public static void main(String[] args) {
+		String colour;
+		System.out.println("Enter colour");
+		Scanner sc=new Scanner (System.in);
+		colour=sc.next();
+		switch(colour)
+		{
+		case "A":System.out.println("Yellow");
+		         break;
+		case "B" :System.out.println("Blue");
+		          break;
+		case "C" :System.out.println("Pink");
+                  break;        
+		default:System.out.println("No Colour");
+                break;         
+		
+		}
+
+	}
+
+}
+
+
+
+
+
+package second;
+
+import java.util.Scanner;
+
+public class Switch2 {
+
+	public static void main(String[] args) {
+		int Arth, a,b,c=0;
+		System.out.println("Enter a,b");
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		b=sc.nextInt();
+		Arth=sc.nextInt();
+		switch(Arth)
+		{
+		case 1:c=a+b;
+		       break;
+		case 2:c=a-b;
+	           break;
+		case 3:c=a*b;
+	           break;
+		default:System.out.println("Not defined");
+                break;
+		}
+		System.out.println(c);
+		
+		}
+		
+	}
