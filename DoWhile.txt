@@ -1,0 +1,146 @@
+package second;
+
+import java.util.Scanner;
+
+public class DoWhile1 {
+public static void main(String[] args) {
+		//prime number or not
+	int n,i=1,count=0;
+	System.out.println("Enter n");
+	Scanner sc=new Scanner (System.in);
+	n=sc.nextInt();
+	do
+	{
+		if(n%i==0)
+		{
+			count++;
+		}
+		i++;
+	}while(i<=n);
+	if(count==2)
+	{
+		System.out.println("It is a Prime Number");
+	}
+	else
+	{
+		System.out.println("It is not a Prime Number");
+	}
+	}
+
+}
+
+
+
+package second;
+
+import java.util.Scanner;
+
+public class DoWhile2 {
+
+	public static void main(String[] args) {
+		//palindrome or not
+		int n,r,rev=0,m;
+		System.out.println("Enter n");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		m=n;
+		do {
+			r=n%10;
+			rev=(rev*10)+r;
+			n=n/10;
+			}while(n>0);
+		if(m==rev)
+			System.out.println("It is a Palindrome");
+		else
+			System.out.println("It is not a Palindrome");
+
+	}
+
+}
+
+
+
+
+
+package second;
+
+import java.util.Scanner;
+
+public class DoWhile3 {
+
+	public static void main(String[] args) {
+		// 407 is armstrong or not
+    int r,n,sum=0,m;
+   
+    System.out.println("Enter n");
+    Scanner sc=new Scanner(System.in);
+    n=sc.nextInt();
+    m=n;
+    do {
+    	r=n%10;
+    	sum=sum+(r*r*r);
+    	n=n/10;
+    }while(n>0);
+    if(m==sum)
+    	 System.out.println("It is Armstrong number" );
+    else
+    	 System.out.println("It is not Armstrong number");
+    }
+	}
+
+
+
+
+
+package second;
+
+import java.util.Scanner;
+
+public class DoWhile4 {
+
+	public static void main(String[] args) {
+		//armophous number
+		int n,r, sum=0,mult=1;
+		System.out.println("Enter n");
+		Scanner sc=new Scanner (System.in);
+		n=sc.nextInt();
+		do {
+			r=n%10;
+			sum=sum+r;
+			mult=mult*r;
+			n=n/10;
+		}while(n>0);
+		if(mult==sum)
+			System.out.println("It is armophous number");
+		else
+			System.out.println("It is not armophous number");
+			
+		}
+	}
+
+
+
+
+package second;
+
+import java.util.Scanner;
+
+public class DoWhile5 {
+
+	public static void main(String[] args) {
+		//to print name n number of times
+		int n,i=1;
+		String name;
+		System.out.println("Enter name");
+		Scanner sc=new Scanner(System.in);
+		name=sc.next();
+		System.out.println("Enter n");
+		n=sc.nextInt();
+		do {
+			System.out.print(name+" ");
+			i++;
+		}while(i<=n);
+
+	}
+
+}
