@@ -1,0 +1,149 @@
+1)TWO DIM-MULT
+
+package Student;
+
+import java.util.Scanner;
+
+public class Twodimarray {
+
+	public static void main(String[] args) {
+		int[][] a=new int[2][2];
+		int[][] b=new int[2][2];
+		int[][] c=new int[2][2];
+		System.out.println("Enter two arrays");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=1;i++)
+		{
+			for(int j=0;j<=1;j++)
+			{
+			 a[i][j]=sc.nextInt();
+			}}
+			 for(int i=0;i<=1;i++)
+				{
+					for(int j=0;j<=1;j++)
+					{
+			 b[i][j]=sc.nextInt();
+			}}
+			 for(int i=0;i<=1;i++)
+				{
+					for(int j=0;j<=1;j++)
+					{
+			 c[i][j]=0;
+			 for(int k=0;k<=1;k++)
+			 c[i][j]=c[i][j]+(a[i][k]*b[k][j]);
+			 System.out.print(c[i][j]+" ");
+			}
+		
+		
+			System.out.println();
+	      }
+
+   }
+}
+
+
+
+
+2)TO DEMO INTEGER,STRING,DOUBLE IN SINGLE PROGRAM
+
+package Student;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		int[]a=new int[3];
+		String[] b=new String[3];
+		double[]c=new double[3];
+		System.out.println("Enter all arrays");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=2;i++)
+		{
+			a[i]=sc.nextInt();
+			b[i]=sc.next();
+			c[i]=sc.nextDouble();
+			System.out.println(a[i]+ " "+b[i]+" "+c[i]);
+		}
+		System.out.println();
+
+	}
+
+}
+
+
+3)JAGGED ARRAY
+
+package Student;
+
+public class JaggedArray {
+
+	public static void main(String[] args) {
+		int a[][]=new int[3][];
+		a[0]=new int[4];
+		a[1]=new int[2];
+		a[2]=new int[5];
+		a[0][0]=10;
+		a[0][1]=20;
+		a[0][2]=30;
+		a[0][3]=40;
+		a[1][0]=11;
+		a[1][1]=12;
+		a[2][0]=13;
+		a[2][1]=14;
+		a[2][2]=15;
+		a[2][3]=16;
+		a[2][4]=17;
+		System.out.println("Jagged array");
+		for(int i=0;i<=2;i++)
+		{
+			for(int j=0;j<=a[i].length-1;j++)
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+				
+	}
+
+}
+
+
+
+4)EVEN & ODD
+
+package Student;
+
+import java.util.Scanner;
+
+public class OneDimarray {
+
+	public static void main(String[] args) {
+		int even=0,odd=0;
+		int[] a=new int[10];
+		System.out.println("Enter array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=9;i++)
+		{
+			a[i]=sc.nextInt();
+			System.out.println(a[i]);
+			if(a[i]%2==0) {
+				System.out.print("even number");
+			    even++;
+		}
+			else
+			{
+				System.out.print("odd number");
+			    odd++;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
