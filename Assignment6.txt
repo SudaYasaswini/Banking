@@ -1,0 +1,86 @@
+1)USING REF VARIABLE
+
+package Assignments;
+public class Student {
+	int sid;
+	   String sname;
+	   double results;
+	   int fee;
+	  
+	   public static void main(String[] args) {
+				Student c=new Student();
+				c.sid=50;
+				c.sname="Ashu";
+				c.results=100.0;
+				c.fee=25000;
+				System.out.println(c.sid+" "+c.sname+" "+c.results+" "+c.fee);
+			
+
+
+
+	}
+
+}
+
+
+
+2)USING METHOD
+
+package Assignments;
+
+public class Student {
+
+	int sid;
+	   String sname;
+	   double results;
+	   int fee;
+	   void show(int x,String y,double z,int m) {
+	   sid=x;
+	   sname=y;
+	   results=z;
+	   fee=m;
+	   System.out.println(sid+" "+sname+" "+results+" "+fee);
+	   }
+	   
+	  
+	   public static void main(String[] args) {
+				Student c=new Student();
+				c.show(10,"Ashu",100.0,25000);
+
+	}
+
+}
+
+
+
+
+
+
+
+3)USING CONSTRUCTOR
+
+package Assignments;
+
+public class Student {
+	   int sid;
+	   String sname;
+	   double results;
+	   int fee;
+	  Student(int x,String y,double z,int m) {
+	   sid=x;
+	   sname=y;
+	   results=z;
+	   fee=m;
+	   System.out.println(sid+" "+sname+" "+results+" "+fee);
+	   }
+	   
+	  
+	   public static void main(String[] args) {
+				Student c=new Student(10,"Ashu",100.0,25000);
+				
+
+
+	
+	}
+
+}
