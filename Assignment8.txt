@@ -1,0 +1,103 @@
+1)Create Student class with sid,sname,marks datamembers and input() method for input details and output() method for print details.
+
+package pack;
+
+import java.util.Scanner;
+
+class Student{
+	int sid;
+	String sname;
+	double marks;
+void input( ) {
+	System.out.println("Enter Student details");
+	Scanner sc=new Scanner(System.in);
+	sid=sc.nextInt();
+	sname=sc.next();
+	marks=sc.nextDouble();
+}
+
+void output() {
+System.out.println(sid+" "+sname+" "+marks);
+}
+
+public class Practice {
+
+	public static void main(String[] args) {
+		Student s=new Student();
+		s.output();
+
+	}
+
+}
+}
+
+
+2)Bankcustomer class with acno,atype,amount using constructor overloading.
+
+
+package pack;
+
+public class Bankcustomer {
+	int acno;
+	String atype;
+	double amount;
+	Bankcustomer(int x){
+		acno=x;
+		System.out.println(x);
+	}
+	Bankcustomer(String a,double b){
+		atype=a;
+		amount=b;
+		System.out.println(a+" "+b);
+	}
+
+	public static void main(String[] args) {
+		Bankcustomer b= new Bankcustomer(1);
+		Bankcustomer b1= new Bankcustomer("savings",25000.0);
+
+	}
+
+}
+
+
+3)To make inheritance for given classes person,Customer,Emp.
+
+
+package pack;
+class Person{
+	int pid;
+	String pname;
+	Person(int x,String y){
+		pid=x;
+		pname=y;
+		System.out.println(x+" "+y);
+	}
+}
+class Emp extends Person{
+	double sal;
+	Emp(int x,String y,double z){
+		super(x,y);
+		sal=z;
+		System.out.println(z);
+	}
+}
+class Custumer2 extends Person{
+	int marks;
+	Custumer2(int x,String y,int a){
+		super(x,y);
+		marks=a;
+		System.out.println(a);
+		
+		
+	}
+}
+
+public class Practice3 {
+
+	public static void main(String[] args) {
+		Emp e=new Emp(1,"Yashu",25000.0);
+		Custumer2 s=new Custumer2(2,"Ashu",45);
+
+	}
+
+}
