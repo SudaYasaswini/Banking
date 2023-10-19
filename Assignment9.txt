@@ -1,0 +1,168 @@
+1)Multiple Inheritance
+
+package practice;
+interface Red{
+ void show();
+ }
+interface Green{
+	void accept();
+}
+class Yellow implements Red,Green{
+	public void show() {
+		System.out.println("It is red colour");
+	}
+	public void accept() {
+		System.out.println("It is Green Colour");
+	}
+}
+
+public class MultipleInh2 {
+
+	public static void main(String[] args) {
+		Yellow y=new Yellow();
+		y.show();
+		y.accept();
+	}
+
+}
+
+
+
+
+
+2)Super Constructor
+
+package practice;
+class Game{
+	int id;
+	String name;
+	Game(int x,String y){
+	id=x;
+	name=y;
+	System.out.println(x+" "+y);
+		}
+	}
+class Mario extends Game{
+	Mario(){
+		super(1,"Chess");
+		System.out.println("It is a video game");
+		
+		
+	}
+}
+
+public class Supercntr {
+
+	public static void main(String[] args) {
+		Mario m=new Mario();
+	}
+
+}
+
+
+
+
+3)Method Overriding
+
+package practice;
+class Banks{
+	void show(){
+	System.out.println("0% interest");
+		
+	}
+}
+class Sbi extends Banks{
+	void show(){
+		System.out.println("7% interest");
+		
+	}
+}
+class Axis extends Banks{
+	void show(){
+		System.out.println("8% interest");
+	}
+}
+class Icici extends Banks{
+	void show(){
+		System.out.println("9% interest");
+	}
+}
+public class Overriding1 {
+
+	public static void main(String[] args) {
+		Icici i=new Icici();
+		i.show();
+		Axis a=new Axis();
+		a.show();
+		Sbi s=new Sbi();
+		s.show();
+
+	}
+
+}
+
+
+
+
+4)Swap with overloading
+
+package practice;
+
+public class Swap {
+		void show(int x,int y) {
+			int temp;
+			temp=x;
+			x=y;
+			y=temp;
+			System.out.println(x+" "+y);
+		}
+     void show(double x,double y) {
+    	 double temp;
+    	 temp=x;
+    	 x=y;
+    	 y=temp;
+    	 System.out.println(x+" "+y);
+    	 
+     }
+
+	public static void main(String[] args) {
+		Swap s=new Swap();
+		s.show(10,20);
+		s.show(20.0, 30.0);
+
+	}
+
+}
+
+
+
+5)abstract class using Hierachial Method
+
+package practice;
+abstract class Shape{
+	abstract void show();
+		}
+class Circle extends Shape{
+	void show() {
+		System.out.println("Round shape");
+	}
+}
+class Rectangle extends Shape{
+	void show() {
+		System.out.println("Box shape");
+	}
+}
+
+public class HierarchialInh1 {
+
+	public static void main(String[] args) {
+		Rectangle r=new Rectangle();
+        r.show();
+        Circle c=new Circle();
+        c.show();
+	}
+
+}
+
+
+
