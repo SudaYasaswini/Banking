@@ -1,0 +1,69 @@
+1)STRING
+
+package labcode;
+
+public class Stringdemo {
+
+	public static void main(java.lang.String[] args) {
+		String s1="Sairam";
+		String s2=new String("krishna");
+		String s3=s1;
+		System.out.println(s1.concat("Hari"));
+		System.out.println(s1.charAt(3));
+		System.out.println(s2.replace("h", "n"));
+		System.out.println(s1.startsWith("S"));
+		System.out.println(s2.endsWith("A"));
+		System.out.println(s1.equals(s3));
+		System.out.println(s2.indexOf('i'));
+		System.out.println(s3.substring(0,3));
+		
+		
+
+	}
+
+}
+
+
+
+2)STRINGBUFFER AND STRINGBUILDER
+package labcode;
+
+public class Stringdemo1 {
+
+	public static void main(String[] args) {
+		StringBuffer s2=new StringBuffer("Ashwini");
+		StringBuilder s3=new StringBuilder("Pravalika");
+		System.out.println(s2.reverse());
+		System.out.println(s3.delete(4, 9));
+		System.out.println(s2.append("chary"));
+		System.out.println(s2.insert(0, "sai"));
+		System.out.println(s3.length());
+		
+
+	}
+
+}
+
+
+
+
+3)package labcode;
+public class Objectdemo {
+
+	public static void main(String[] args) {
+		String s1="Ashwini";
+		String s2=new String("Pravalika");
+		StringBuffer s3=new StringBuffer("Sharath");
+		StringBuilder s4=new StringBuilder("Sudheer");
+		System.out.println(s2.equals(s4));
+		System.out.println(s1==s2);
+		System.out.println(s3.hashCode());
+		System.out.println(s4.toString());
+		System.out.println(s2.getClass());
+		
+	}
+		
+
+	}
+
+
