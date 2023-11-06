@@ -1,0 +1,62 @@
+//coustom class example
+
+package pack;
+class InvalidNameException extends Exception{
+	InvalidNameException(String s){
+		super(s);
+		}
+}
+class InvalidCountryException extends Exception{
+	InvalidCountryException(String t){
+		super(t);
+	}
+}
+class InvalidTaxException extends Exception{
+	InvalidTaxException(String x){
+		super(x);
+	}
+}
+ class Multi {
+	static double validate(String name,String country,double salary)throws InvalidNameException,InvalidCountryException,InvalidTaxException{
+		if(name==null||name.isEmpty()) {
+			throw new InvalidNameException("InvalidNameException");
+		}
+		if(country!="India") {
+			throw new InvalidCountryException("InvalidCountryException");
+		}
+		double tax=0;
+		if(salary>=100000) { 
+			tax =salary*0.08;}
+		else if(salary>=50000 && salary<100000) {
+			tax=salary*0.07;}
+		else if(salary<50000 && salary>=20000) {
+			tax=salary*0.06;}
+		else
+			if(salary<20000) {
+				tax=0;
+				throw new InvalidTaxException("InvalidTaxException");	}
+				return tax;
+		}
+}
+            public class Customclass {
+			public static void main(String[] args) {
+					try {
+						double d=Multi.validate("","india",100000);
+						System.out.println(d);
+					}
+					catch(InvalidNameException e) {
+						System.out.println(e.getMessage());
+					}
+					catch(InvalidCountryException e) {
+						System.out.println(e.getMessage());
+					}
+					catch(InvalidTaxException e) {
+						System.out.println(e.getMessage());
+					}
+					System.out.println("rest of the code");
+				}
+			}
+		
+
+
+
