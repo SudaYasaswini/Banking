@@ -1,0 +1,42 @@
+1)Create emo details eid,enmae,esal and add details ,print details,using ARRAYLIST and LINKEDLIST
+
+package practice;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+class Emp{
+	int eid;
+	String ename;
+	double esal;
+	Emp(int x,String y,double z){
+		eid=x;
+		ename=y;
+		esal=z;
+	}
+	public void addAll(LinkedList<Emp> ll) {
+		
+	}
+}
+
+public class collectionsdemo {
+public static void main(String[] args) {
+	Emp e1=new Emp(1, "Sharath", 25000.0);
+	Emp e2=new Emp(2, "Ashu", 35000.0);
+	Emp e3=new Emp(3, "Sharath", 55000.0);
+	ArrayList<Emp> al=new ArrayList<Emp>();
+	Emp e4=new Emp(4,"Prav",65000.0);
+	Emp e5=new Emp(5,"Sudheer",60000.0);
+	LinkedList<Emp> ll=new LinkedList<Emp>();
+	al.add(e1);
+	al.add(e2);
+	al.add(e3);
+	ll.add(e4);
+	ll.add(e5);
+	al.addAll(ll);
+	for(Emp a:al){
+		System.out.println(a.eid+" "+a.ename+" "+a.esal);
+	}
+	}
+
+}
